@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .redBlack {
+        background-color: red;
+        color: black;
+    }
+
+    .yellowBlue {
+        background-color: yellow;
+        color: blue;
+    }
+
+    .greenPink {
+        background-color: green;
+        color: pink;
+    }
+
+    .greyBrown {
+        background-color: grey;
+        color: brown;
+    }
+</style>
+
+<body>
+    <div>
+        <h1>LALALALA</h1>
+        <button onclick="myFunction()">CLICCAMI</button>
+    </div>
+
+    <script>
+        let pippo = document.querySelector("div");
+        let classi = ["redBlack", "yellowBlue", "greenPink", "greyBrown"];
+        let index = 0;
+
+        function myFunction() {
+                classi.forEach(className => {
+                pippo.classList.remove(className);
+            });
+
+            pippo.classList.add(classi[index]);
+
+            index = (index + 1) % classi.length;
+        }
+    </script>
+
+</body>
+</html>

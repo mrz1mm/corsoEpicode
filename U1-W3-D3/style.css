@@ -1,0 +1,191 @@
+/* -------------------- GLOBAL -------------------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Century Gothic", Arial, sans-serif;
+  background-color: blueviolet;
+  font-size: 1.2rem;
+  line-height: 1.65;
+}
+
+ul {
+padding: 0;
+margin: 0;
+  list-style-type: none;
+}
+
+/* -------------------- GENERAL CLASSES -------------------- */
+.textCenter {
+  text-align: center;
+}
+
+.verticalCenter {
+  vertical-align: middle;
+}
+
+.inline {
+  display: inline;
+}
+
+.inlineBlock {
+  display: inline-block;
+}
+
+.colorBlack {
+  color: black;
+}
+
+.colorWhite {
+  color: white;
+}
+
+.backgroundWhite {
+  background-color: white;
+}
+
+.backgroundCelestino {
+  background-color: #c5e1e6;
+}
+
+.backgroundRed {
+  background-color: red;
+}
+
+.borderClassic {
+  border: solid 1px black;
+}
+
+.lineThrough {
+  text-decoration: line-through;
+}
+
+.margin1 {
+  margin: 1em;
+}
+
+.margin2 {
+  margin: 2em;
+}
+
+.marginInline1 {
+  margin-inline: 1em;
+}
+
+.marginInline2 {
+  margin-inline: 2em;
+}
+
+.marginBlock1 {
+  margin-block: 1em;
+}
+
+.marginBlock2 {
+  margin-block: 2em;
+}
+
+.padding1 {
+  padding: 1em;
+}
+
+.padding2 {
+  padding: 2em;
+}
+
+.paddingInline1 {
+  padding-inline: 1em;
+}
+
+.paddingInline2 {
+  padding-inline: 2em;
+}
+
+.paddingBlock1 {
+  padding-block: 1em;
+}
+
+.paddingBlock2 {
+  padding-block: 2em;
+}
+
+.paddingDx1 {
+  padding-inline: 0 1em;
+}
+
+/* -------------------- CONTENT'S CLASSES -------------------- */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #container {
+    width: 50vw;
+    border-radius: 10px;
+  }
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#newTaskInput {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+button {
+  flex-shrink: 0;
+}
+
+#newTask input {
+    border: solid 1px lightgrey;
+    border-radius: 5px;
+  }
+ 
+#newTask button {
+    background-color: #00f4f4;
+    border: none;
+    border-radius: 10%;
+    width: 6vw;
+    height: 4vh;
+  }
+
+  #container li {
+    margin: 1em;
+  }
+
+  #container li div {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    paddi
+
+  }
+/* -------------------- MAIN -------------------- */
+
+/*
+
+
+#newTask {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+#container li div button {
+  text-align: right;
+  width: 2em;
+  height: 2em;
+  margin-left: 5em;
+  border: none;
+}

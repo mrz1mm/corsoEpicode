@@ -1,0 +1,28 @@
+.collapseButton {
+  background-color: transparent;
+  border: none;
+  color: #31d2f2;
+}
+
+#hero {
+  h1 {
+    font-size: 4rem;
+    font-weight: lighter;
+    border-bottom: solid 1px;
+  }
+
+  span {
+    font-size: 1.5rem;
+    vertical-align: middle;
+  }
+
+  h2 {
+    font-style: italic;
+    font-weight: 400;
+  }
+}
+
+#aboutUs img {
+  width: 70px;
+  height: 70px;
+}

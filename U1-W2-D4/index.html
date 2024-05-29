@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+
+
+
+// 1° caso
+var x = "fuori";
+function faiQualcosa() {
+ var x = "dentro" 
+  console.log(x); // risultato "dentro"
+}
+faiQualcosa();
+console.log(x) // risultato "fuori"
+
+
+// 2° caso
+var x = "fuori";
+function faiQualcosa() {
+  x = "dentro"
+  console.log(x); // risultato "dentro"
+}
+faiQualcosa();
+console.log(x)// risultato "dentro"
+
+
+
+
+
+
+
+// 3° caso
+var y = 10; // y è 10
+{var y = 2} // y è 2
+console.log(y) // y è 2
+
+
+
+    </script>
+</body>
+</html>

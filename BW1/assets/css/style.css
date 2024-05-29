@@ -1,0 +1,452 @@
+/* -------------------- GLOBAL -------------------- */
+body {
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Josefin Sans", sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+body::before {
+  /* è un selettore di pseudo-elemento che inserisce contenuti prima del contenuto dell'elemento */
+  content: ""; /* imposta il contenuto dello pseudo elemento come vuoto */
+  position: absolute; /* lo posiziona in base al suo primo genitore */
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+section {
+  width: 75%;
+  height: 38rem;
+  margin-inline: auto;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 5px 9px 20px 18px rgba(0, 0, 0, 0.5);
+  border: 2px solid black;
+}
+
+a {
+  text-decoration: none;
+}
+
+#logoWrapper {
+  margin-left: 5em;
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+#logoWrapper img {
+  width: 30vh;
+}
+
+/* -------------------- welcomePage -------------------- */
+#welcomePage {
+  background-image: url(../img/background/welcomePage.jpg);
+}
+
+#mainWelcomePage {
+  color: white;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+#mainWelcomePage h1 {
+  font-size: 4.5em;
+  font-weight: 600;
+  padding-top: 10px;
+  margin-left: 2.8em;
+}
+
+#welcomePageContainer {
+  height: 23.5rem;
+  margin: 3em;
+  margin-left: 12em;
+  width: 53em;
+  padding: 1.2em;
+}
+
+#infoWrapper h2 {
+  margin-top: 0.8em;
+  padding: 0.5em;
+  font-size: 2em;
+  font-weight: 600;
+  text-align: center;
+}
+
+#infoWrapper p {
+  color: white;
+  line-height: 1.5;
+  padding: 1.2em;
+  text-align: start;
+  font-size: x-large;
+}
+
+#infoWrapper ul {
+  text-align: start;
+  line-height: 1.8em;
+  margin-left: 1.5em;
+  font-size: x-large;
+}
+
+#buttonsContainer {
+  font-size: 1.5em;
+  margin-left: 8em;
+  display: flex;
+  justify-content: space-between;
+}
+
+#goDifficultyPage {
+  font-size: 0.8em;
+  margin-top: 5%;
+  margin-right: 60%;
+  padding: 1em 2.5em;
+  border-radius: 10px;
+  background-color: #3b6a81;
+  position: absolute;
+  right: 0;
+  transition: transform 0.2s;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#goDifficultyPage:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px 18px #a5a299;
+}
+
+/* -------------------- selectDifficulty -------------------- */
+#selectDifficultyPage {
+  background-image: url(../img/background/selectDifficulty.jpg);
+}
+
+#insertNameWrapper h1 {
+  padding: 0.5em;
+  padding-top: 0.5em;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 2.8em;
+  color: rgb(255, 255, 255);
+}
+
+#insertNameWrapper input {
+  width: 50%;
+  height: 3em;
+  border-radius: 10px;
+  font-size: 1.3em;
+  margin-top: 1em;
+  text-align: center;
+  background-color: rgb(219, 213, 213);
+}
+
+#selectDifficultyWrapper {
+  margin-top: 3em;
+  display: flex;
+  justify-content: space-around;
+}
+
+.luffyImagesWrapper {
+  transition: transform 0.2s;
+}
+
+.luffyImagesWrapper:hover {
+  transform: scale(1.2);
+}
+
+.luffyImagesWrapper img {
+  margin-top: 3em;
+  width: auto;
+  height: 14.6em;
+}
+
+.luffyImagesWrapper figcaption {
+  color: white;
+  margin-top: 5px;
+  font-size: 1.5em;
+  background: linear-gradient(217deg, #ffd01f, #ff0000);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+/* -------------------- quiz -------------------- */
+
+#quizPage {
+  background-image: url(../img/background/quiz.png);
+}
+
+#quiz {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  position: relative;
+}
+/*
+#counterQuestionWrapper {
+  display: inline;
+}
+
+#counterQuestion {
+  color: white;
+}
+*/
+
+#timer {
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#question {
+  font-size: 2em;
+  margin-top: 3.1em;
+  margin-bottom: 4em;
+  color: white;
+  font-weight: bold;
+}
+#answerDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#timerDiv {
+  position: absolute;
+}
+
+#timer {
+  position: absolute;
+  right: 140px;
+  top: 65px;
+}
+
+.answer {
+  background-color: #b98d5a;
+  color: black;
+  height: 3em;
+  margin: 1.5em;
+  width: 25vw;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.2em;
+  box-shadow: 5px 9px 20px 18px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s;
+}
+
+.answer:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px 18px #fff;
+}
+
+.answer:hover:not([disabled]) {
+  background-color: black;
+  color: white;
+}
+
+.answer:disabled {
+  cursor: no-drop;
+}
+
+.correctAnswer {
+  background-color: #89c93d;
+  color: white;
+  box-shadow: 0px 0px 20px 18px #fff;
+}
+
+.wrongAnswer {
+  background-color: #851d2b;
+  color: white;
+  box-shadow: 0px 0px 20px 18px #fff;
+}
+
+/* DOUGNOUT*/
+
+/* -------------------- showScore -------------------- */
+#showScorePage {
+  background-image: url(../img/background/showScore.jpg);
+  color: white;
+}
+
+section > * {
+  margin: 2em;
+}
+
+#resultsWrapper {
+  text-align: center;
+}
+
+#resultsWrapper h2 {
+  padding-top: 2vh;
+  font-size: 3rem;
+}
+
+#resultsWrapper p {
+  font-size: 1.3rem;
+  color: white;
+  margin: 1rem;
+}
+
+#correctPercentageWrapper > *,
+#wrongPercentageWrapper > * {
+  margin: 0.5rem;
+}
+
+#scoreWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#correctPercentageWrapper {
+  padding-left: 5%;
+}
+
+#wrongPercentageWrapper {
+  padding-right: 5%;
+}
+
+#correctPercentageWrapper h2,
+#wrongPercentageWrapper h2 {
+  font-size: 2.5rem;
+}
+
+#correctPercentageWrapper h3,
+#wrongPercentageWrapper h3 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#correctPercentageWrapper p,
+#wrongPercentageWrapper p {
+  font-size: 1.1rem;
+  color: white;
+}
+
+#scoreChartText {
+  position: relative;
+  top: 9.65rem;
+}
+
+#rateUsButtonWrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+
+#rateUsButton {
+  width: 10rem;
+  height: 2.5rem;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 1.1rem;
+  transition: transform 0.2s ease;
+}
+
+#rateUsButton:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+}
+
+/* -------------------- rateUs -------------------- */
+#feedbackPage {
+  background-image: url(../img/background/rateUs.jpg);
+}
+
+#feedbackMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#howDidItGoWrapper p {
+  z-index: 1;
+  background-color: #ffca33;
+  border-radius: 30px;
+  box-shadow: 5px 5px 20px black;
+  margin-bottom: 2em;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+#howDidItGoWrapper h1,
+p {
+  color: black;
+}
+
+#howDidItGoWrapper h1 {
+  margin: 0.5em;
+  margin-bottom: 0.8em;
+}
+
+#howDidItGoWrapper p {
+  padding: 10px;
+}
+
+/* Star Rating Sistem */
+#containerStars {
+  display: flex;
+}
+
+#starRatingWrapper {
+  font-size: 2.1em;
+  margin-bottom: 0.5em;
+}
+
+.fa-fire-flame-curved {
+  color: grey;
+  margin: 3px;
+}
+
+.fa-fire-flame-curved.hovered {
+  color: white;
+}
+
+.fa-fire-flame-curved.clicked {
+  color: orange;
+}
+
+#feedbackContainer h1 {
+  padding-top: 1.8em;
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+#feedbackWrapper input {
+  border: none;
+  margin: 2rem;
+  padding: 0.7rem;
+  border-radius: 10px;
+  width: 30vw;
+  height: 5vh;
+}
+
+#feedbackWrapper label {
+  color: white;
+  font-size: xx-large;
+  display: block;
+}
+
+#playItAgainWrapper button {
+  font-size: 1.2em;
+  transition: transform 0.2s;
+  margin: 2em;
+  background-color: #ffca33;
+  box-shadow: 5px 5px 20px black;
+  padding: 0.8em;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 1.5em;
+}
+
+#playItAgainWrapper button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}

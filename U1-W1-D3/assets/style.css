@@ -1,0 +1,94 @@
+/* -------------------- GLOBAL -------------------- */
+body {
+  font-family: "Century Gothic";
+}
+
+main,
+footer {
+  margin: 0 25vh;
+}
+
+h2 {
+  border-bottom: solid 1px #c4f3f2;
+  padding: 1em 0em 1em;
+}
+
+a {
+  color: #107777;
+}
+
+/* -------------------- HEADER -------------------- */
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em 0;
+  border-top: solid 1px #feeab7;
+}
+
+header img {
+  height: 4em;
+}
+
+#thanksgiving {
+  background-color: #fdfbf1;
+  color: #004d4c;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* -------------------- MAIN -------------------- */
+h1 {
+  text-align: center;
+  margin: 1em 3em;
+}
+
+/* --- introduction --- */
+
+#introduction img {
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+  box-sizing: border-box;
+}
+
+#introduction cite {
+  display: block;
+  color: #a4a4a4;
+  text-align: center;
+  margin: 1em 0;
+}
+
+.featured {
+  border-left: solid 1px #ffd877;
+  padding-left: 1em;
+}
+
+.featured p {
+  color: #b5460f;
+  margin: 0;
+  font-weight: bold;
+}
+
+.featured a {
+  margin: 0;
+  font-weight: bold;
+}
+
+/* --- ingredients --- */
+#ingredients ul {
+  line-height: 2;
+}
+
+/* --- method --- */
+#method {
+  margin-top: 0;
+}
+
+/* -------------------- FOOTER -------------------- */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}

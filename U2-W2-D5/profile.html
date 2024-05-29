@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Pagina profilo del sito di Netflix" />
+    <meta name="author" content="Simone Attanasio" />
+    <title>Netflix - Profile</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.png" />
+    <link rel="stylesheet" href="./assets/css/custom-bootstrap.css" />
+    <link rel="stylesheet" href="./assets/css/stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body id="profilePage" class="bg-netflixPrimary text-netflixSecondary px-3">
+    <header>
+      <a href="index.html">
+        <img src="./assets/img/netflix_logo.png" alt="logo netflix" id="logo" />
+      </a>
+    </header>
+    <main>
+      <section class="mt-5 mb-4">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3"
+            >
+              <div class="row">
+                <div class="col-12">
+                  <h1>Edit Profile</h1>
+                </div>
+              </div>
+              <div class="row border-top border-bottom">
+                <div class="col-3 py-3">
+                  <div class="position-relative">
+                    <img
+                      src="./assets/img/avatar.png"
+                      alt="avatar utente"
+                      class="img-fluid"
+                    />
+                    <i class="bi bi-pencil-square position-absolute"></i>
+                  </div>
+                </div>
+                <div class="col-9 py-3">
+                  <div class="row row-cols-1 border-bottom">
+                    <div class="col">
+                      <h6 class="bg-netflixTertiary text-white p-2 mb-3">
+                        Strive Student
+                      </h6>
+                    </div>
+                    <div class="col text-netflixTertiary">
+                      <h5>Language:</h5>
+                    </div>
+                    <div class="col">
+                      <div class="btn-group mb-3" role="group">
+                        <button
+                          type="button"
+                          class="btn btn-netflixPrimary btn-outline-netflixSecondary dropdown-toggle rounded-0"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          English &nbsp;&nbsp;&nbsp;
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Italian</a></li>
+                          <li><a class="dropdown-item" href="#">Deutch</a></li>
+                          <li><a class="dropdown-item" href="#">Chinese</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="row row-cols-1 mt-4 mb-2 border-bottom border-bottom-2 border-bottom-danger"
+                  >
+                    <div class="col text-netflixTertiary mb-2">
+                      <h5>Maturity Settings:</h5>
+                    </div>
+                    <div class="col mb-2">
+                      <p
+                        class="d-inline-block bg-netflixQuartary text-white mb-0 p-1"
+                      >
+                        ALL MATURITY RATINGS
+                      </p>
+                    </div>
+                    <div class="col">
+                      <p>
+                        Show titles of
+                        <strong class="fw-bold">all maturity rating</strong> for
+                        this profile
+                      </p>
+                    </div>
+                    <div class="col mb-3">
+                      <button
+                        type="button"
+                        class="btn btn-outline-netflixTertiary px-4 rounded-0"
+                      >
+                        EDIT
+                      </button>
+                    </div>
+                  </div>
+                  <div class="row row-cols-1 mt-4">
+                    <div class="col text-netflixTertiary">
+                      <h5>Autoplay controls</h5>
+                    </div>
+                    <div class="col d-flex align-items-center mb-1">
+                      <div class="custom-checkbox">
+                        <input
+                          type="checkbox"
+                          id="autoplayNextEpisode"
+                          class="custom-control-input bg-netflixPrimary no-outline"
+                          name="nextEpisode"
+                          value="autoplayPreviewYes"
+                        />
+                        <label
+                          for="autoplayNextEpisode"
+                          class="custom-control-label"
+                        ></label>
+                      </div>
+                      <span class="ms-3">
+                        Autoplay next episode in a series on all devices.
+                      </span>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                      <div class="custom-checkbox">
+                        <input
+                          type="checkbox"
+                          id="autoplayPreview"
+                          class="custom-control-input bg-netflixPrimary no-outline"
+                          name="nextEpisode"
+                          value="autoplayPreviewYes"
+                        />
+                        <label
+                          for="autoplayPreview"
+                          class="custom-control-label"
+                        ></label>
+                      </div>
+                      <span class="ms-3">
+                        Autoplay preview while browsing on all devices.
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="my-0">
+      <div class="container">
+        <div class="row mt-3">
+          <div
+            class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3"
+          >
+            <div class="d-flex justify-content-center">
+              <button
+                type="button"
+                class="btn btn-outline-netflixTertiary rounded-0 fw-bold px-3 mx-3"
+              >
+                SAVE
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-netflixTertiary rounded-0 fw-bold px-3 mx-3"
+              >
+                CANCEL
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-netflixTertiary rounded-0 fw-bold px-3 mx-3"
+              >
+                DELETE PROFILE
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,226 @@
+/* -------------------- GLOBAL -------------------- */
+* {
+  font-family: Poppins, Century Gothic;
+  line-height: 1.5em;
+}
+
+/* INIZIO MAGAGNA*/
+h1 {
+  line-height: 1.5em;
+}
+
+header {
+  font-family: Poppins, Century Gothic;
+  line-height: 1.5em;
+}
+
+footer {
+  font-family: Poppins, Century Gothic;
+  line-height: 1.5em;
+}
+/* FINE MAGAGNA*/
+
+body {
+  background-image: url(../img/sfondo.png);
+  background-size: contain;
+  margin: 0 30vh;
+}
+
+strong {
+  color: #ac2c72;
+  font-weight: bold;
+}
+
+code {
+  background-color: #e2e9e9;
+  border: solid 1px #a3a3a3;
+  border-radius: 20%;
+}
+
+a {
+  color: #22adcf;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-size: x-large;
+  padding: 1em 0;
+  text-align: center;
+}
+
+button {
+  background-color: #356dc7;
+  color: white;
+}
+
+/* -------------------- HEADER -------------------- */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 1em;
+  background-image: linear-gradient(to bottom left, #009bc7, #0f6d87);
+
+  color: #ffffff;
+  margin-top: 1em;
+  box-shadow: 0px 0px 10px 2px grey;
+}
+
+header img {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+figcaption {
+  text-align: center;
+  margin: 1.5em 0;
+}
+
+nav {
+  text-align: center;
+}
+
+/* -------------------- MAIN -------------------- */
+main {
+  background-color: #ffffff;
+  margin: 2em 0;
+  padding: 1em;
+  line-height: 1.5em;
+  box-shadow: 0px 0px 10px 2px grey;
+}
+
+main div {
+  margin: 1.5em 0;
+}
+
+/* --- description --- */
+.reference {
+  color: #c8c5c8;
+  margin: 1em 0;
+}
+
+# description ul {
+  list-style-type: disc;
+  padding-left: 2em;
+}
+
+ol {
+  list-style-type: decimal;
+  padding-left: 2em;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+caption {
+  font-weight: bold;
+  font-style: italic;
+}
+
+thead {
+  background-color: #3366cc;
+  color: white;
+  height: 3em;
+}
+
+td,
+th {
+  border: 1px solid white;
+  text-align: center;
+  vertical-align: middle;
+  padding: 8px;
+}
+
+td {
+  height: 3em;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+  width: 25%;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  width: 25%;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+  width: 50%;
+}
+
+tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+tr:last-child {
+  border-bottom: solid 1px #3366cc;
+}
+
+#video iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 10%;
+}
+
+/* --- novita --- */
+#novita {
+  background-color: #e1e5e6;
+  padding: 0 0.75em 0.5em;
+}
+
+.form {
+  display: flex;
+}
+
+form input {
+  width: 60%;
+}
+
+form button {
+  width: 33%;
+}
+
+/* --- articoliCorrelati --- */
+#articoliCorrelati {
+  padding-top: 1em;
+}
+
+.article {
+  background-color: #e1e5e6;
+  padding: 1em 1em 1em;
+}
+
+.data {
+  font-size: smaller;
+  text-align: right;
+  margin-top: 1em;
+}
+
+/* -------------------- FOOTER -------------------- */
+footer {
+  background-color: #065268;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  margin-bottom: 1em;
+  box-shadow: 0px 0px 10px 2px grey;
+}
+
+footer p {
+  margin: 1em 0;
+}
+
+footer a {
+  color: #ff00fe;
+}

@@ -1,0 +1,25 @@
+<a routerLink="/carDetail/:{{ carCard?.model }}">
+  <div class="card d-flex flex-column align-items-center my-3">
+    <img
+      src="{{ carCard?.modelImage }}"
+      class="card-img-top"
+      alt="img dell'auto"
+    />
+    <div class="card-body d-flex flex-column align-items-center">
+      <h5 class="card-title text-center">Modello: {{ carCard?.model }}</h5>
+      <p class="card-text">Anno: {{ carCard?.year }}</p>
+      <p class="card-text">Prezzo {{ carCard?.price }}€</p>
+      <p class="card-text text-nowrap:">
+        Pronta consegna:
+        <span
+          [ngClass]="{
+            'bg-success': carCard?.available,
+            'bg-danger': !carCard?.available
+          }"
+        >
+          {{ carCard?.available ? "si" : "no" }}
+        </span>
+      </p>
+    </div>
+  </div>
+</a>

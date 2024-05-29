@@ -1,0 +1,197 @@
+/* -------------------- GLOBAL -------------------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e9edee;
+  font-size: 1.2rem;
+  line-height: 1.65;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: currentColor;
+}
+
+/* -------------------- GENERAL CLASSES -------------------- */
+.textCenter {
+  text-align: center;
+}
+
+.colorBlack {
+  color: black;
+}
+
+.colorWhite {
+  color: white;
+}
+
+.colorGrey {
+  color: #eaeded;
+}
+
+.colorAzure {
+  color: #145f6d;
+}
+
+.backgroundColorBlue {
+  background-color: #222f3e;
+}
+
+.backgroundColorLightBlue {
+  background-color: #364759;
+  color: #eaeded;
+}
+
+.backgroundWhite {
+  background-color: white;
+}
+
+.margin1 {
+  margin: 1em;
+}
+
+.margin2 {
+  margin: 2em;
+}
+
+.marginInline1 {
+  margin-inline: 1em;
+}
+
+.marginInline2 {
+  margin-inline: 2em;
+}
+
+.marginBlock1 {
+  margin-block: 1em;
+}
+
+.marginBlock2 {
+  margin-block: 2em;
+}
+
+.padding1 {
+  padding: 1em;
+}
+
+.padding2 {
+  padding: 2em;
+}
+
+.paddingInline1 {
+  padding-inline: 1em;
+}
+
+.paddingInline2 {
+  padding-inline: 2em;
+}
+
+.paddingBlock1 {
+  padding-block: 1em;
+}
+
+.paddingBlock2 {
+  padding-block: 2em;
+}
+
+.paddingDx1 {
+  padding-inline: 0 1em;
+}
+
+/* -------------------- CONTENT'S CLASSES -------------------- */
+.logo {
+  width: 10em;
+}
+
+.buttonXL {
+  background-color: #f56600;
+  border: none;
+  color: white;
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 2em;
+}
+
+.shop {
+  color: #1A6B7A;
+  font-weight: bold;
+  margin-left: 1em;
+}
+
+.card {
+  height: 25em;
+  width: 20em;
+  object-fit: fill;
+  border-radius: 2em;
+  margin-inline: 1em;
+  margin-top: 1em;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* -------------------- HEADER -------------------- */
+nav li {
+  display: inline;
+}
+/* -------------------- MAIN -------------------- */
+main {
+  padding: 2em 2em 0 2em;
+}
+
+/* --- holidayGift --- */
+#giftGuides {
+  background-image: url(../images/bg-image.png);
+  background-size: 100%;
+  height: 12em;
+}
+
+#giftGuides h1 {
+  font-size: 2em;
+  font-weight: bolder;
+  padding: 2em 0 0.25em;
+}
+
+/* --- cardSection --- */
+#cardSection p {
+  display: inline-block;
+  font-weight: bold;
+}
+
+#cardSection a {
+  color: #1A6B7A;
+}
+
+/* --- banners --- */
+#banners p {
+  display: inline-block;
+  margin-bottom: 2em;
+  font-weight: bold;
+}
+
+#banners p {
+  color: black;
+}
+
+#banners figcaption a {
+  color: #1A6B7A;
+}
+
+/* -------------------- FOOTER -------------------- */
+#navFooter a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#logoFooter {
+  padding-block: 4em 4em;
+}

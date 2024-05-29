@@ -1,0 +1,99 @@
+/*---------GLOBAL---------*/
+body {
+  font-family: "Century Gothic";
+  background-image: url(./img/background.jpg);
+  background-size: cover;
+  margin: 0;
+}
+
+/*-------HEADER----------*/
+#header div {
+  background-color: black;
+  color: white;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 2em;
+}
+
+#header a {
+  margin-right: 2em;
+}
+
+/*-------MAIN----------*/
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+#content img {
+  width: 400px;
+  border-radius: 50%;
+  background-position: 10%;
+}
+
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.description {
+  margin-inline: 100px;
+  margin-block: 25px;
+  width: 800px;
+  font-size: 19px;
+  text-align: justify;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 100px;
+  padding-inline: 30vh;
+}
+
+.skills li {
+  margin-left: 20px;
+}
+
+.experiences {
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  margin-block: 100px;
+}
+
+table {
+  border: 2px solid black;
+}
+
+/*-------FOOTER----------*/
+#footer {
+  background-color: black;
+  color: white;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

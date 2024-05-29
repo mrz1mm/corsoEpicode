@@ -1,0 +1,212 @@
+/* ---------- MOBILE ---------- */
+/* --- GENERAL --- */
+* {
+  color: #732104;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  padding: 0.5em;
+}
+
+img {
+  max-width: 100%;
+  margin: 0;
+}
+
+/* --- header --- */
+header ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #fef7e2;
+  border-radius: 6em;
+  padding: 2em;
+  font-weight: bold;
+}
+
+header ul li {
+  list-style-type: none;
+  background-color: #ffdf7f;
+  padding: 1em;
+  border-radius: 4em;
+  margin: 0.5em;
+  width: 6em;
+  text-align: center;
+}
+
+header ul li:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 0;
+  width: 100%;
+  height: 4em;
+}
+
+header ul li:nth-child(1) img {
+  margin-right: 1em;
+  height: 2em;
+}
+
+/* --- main --- */
+/* --- bestSellingProducts --- */
+h1 {
+  font-size: 2.5em;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.card {
+  background-color: #fef7e2;
+  border-radius: 3em;
+  padding-bottom: 0.5em;
+  margin-bottom: 2em;
+}
+
+.card img {
+  border-top-left-radius: 3em;
+  border-top-right-radius: 3em;
+}
+
+.card .descriptionCardContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card .textLeftWrapper p:nth-child(1) {
+  font-weight: bold;
+  margin: 1em 0 0;
+}
+
+.card .textLeftWrapper p:nth-child(2) {
+  margin: 0 0.5em 1em;
+}
+
+.card .textRightWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .buttonWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em;
+}
+
+.card button {
+  font-weight: bold;
+  background-color: #ffdf7f;
+  width: 60%;
+  height: 2.5em;
+  border: none;
+  border-radius: 1em;
+}
+
+/* --- bestSellingProducts --- */
+#latestNews h2 {
+  text-align: center;
+  margin-top: 2em;
+}
+
+#latestNews div {
+  background-color: #fef7e2;
+  border-radius: 2em;
+  padding: 0.5em 1.5em 1em;
+}
+
+#latestNews h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+#latestNews h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* ---------- TABLET ---------- */
+@media screen and (min-width: 576px) {
+  /* --- general --- */
+  body {
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* --- header --- */
+  header {
+    background-color: #fef7e2;
+  }
+
+  header ul {
+    border-radius: 0;
+  }
+
+  header ul li {
+    padding: 3em 4.5em;
+  }
+
+  header ul li:nth-child(1) {
+    font-size: 2em;
+    padding: 0 2em;
+  }
+
+  /* --- main --- */
+  main {
+    padding: 2em;
+  }
+
+  #bestSellingProducts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  h1 {
+    margin: 0 0 1em;
+    width: 100%;
+    text-align: left;
+  }
+
+  .card {
+    width: 12em;
+    margin: 1em;
+  }
+
+  #latestNews h2 {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* --- main --- */
+  #bestSellingProducts {
+    justify-content: flex-start;
+  }
+
+  h1 {
+    margin-bottom: 0.5em;
+  }
+
+  #latestNews h2 {
+    margin-top: 1em;
+  }
+
+  .newsContainer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .newsContainer img {
+    margin: 1em 0 1em 0;
+    height: 100%;
+  }
+}
