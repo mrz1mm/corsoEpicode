@@ -1,0 +1,163 @@
+<section class="form-signin w-100 m-auto">
+  <form (ngSubmit)="onSubmit()" #signInForm="ngForm">
+    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+    <!-- Parte anagrafica -->
+    <div class="border p-3 mb-3">
+      <h2 class="h5 mb-3">Parte anagrafica</h2>
+
+      <!-- Name -->
+      <div class="form-floating mb-3">
+        <input
+          type="text"
+          id="name"
+          name="name"
+          class="form-control"
+          placeholder="Inserisci il tuo nome"
+          required
+          [(ngModel)]="user.name"
+          #name="ngModel"
+        />
+        <label for="name">Name</label>
+      </div>
+
+      <!-- Surname -->
+      <div class="form-floating mb-3">
+        <input
+          type="text"
+          id="surname"
+          name="surname"
+          class="form-control"
+          placeholder="Inserisci il tuo cognome"
+          required
+          [(ngModel)]="user.surname"
+          #surname="ngModel"
+        />
+        <label for="surname">Surname</label>
+      </div>
+
+      <!-- Gender -->
+      <div class="form-floating mb-3">
+        <select
+          id="gender"
+          name="gender"
+          class="form-control"
+          [(ngModel)]="user.gender"
+          #gender="ngModel"
+        >
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+        <label for="gender">Genere</label>
+      </div>
+
+      <!-- Date of birth -->
+      <div class="form-floating mb-3">
+        <input
+          type="date"
+          id="floatingDate"
+          name="dateBirth"
+          class="form-control"
+          placeholder="Inserisci la tua data di nascita"
+          required
+          [(ngModel)]="user.dateBirth"
+          #dateBirth="ngModel"
+        />
+        <label for="floatingDate">Data di nascita</label>
+      </div>
+
+      <!-- Biography -->
+      <div class="form-floating mb-3">
+        <textarea
+          id="floatingBiography"
+          name="biography"
+          class="form-control"
+          placeholder="Inserisci la tua biografia"
+          [(ngModel)]="user.biography"
+          #biography="ngModel"
+        ></textarea>
+        <label for="floatingBiography">Biografia</label>
+      </div>
+
+      <!-- User's image -->
+      <div class="form-floating mb-3">
+        <input
+          type="file"
+          id="floatingImage"
+          name="image"
+          class="form-control"
+          placeholder="Inserisci la tua immagine"
+          [(ngModel)]="user.userImage"
+          #image="ngModel"
+        />
+        <label for="floatingImage">Immagine</label>
+      </div>
+    </div>
+
+    <!-- Credenziali -->
+    <div class="border p-3 mb-3">
+      <h2 class="h5 mb-3">Credenziali</h2>
+
+      <!-- Username -->
+      <div class="form-floating mb-3">
+        <input
+          type="text"
+          id="floatingUsername"
+          name="username"
+          class="form-control"
+          placeholder="Inserisci il tuo username"
+          required
+          [(ngModel)]="user.username"
+          #username="ngModel"
+        />
+        <label for="floatingUsername">Username</label>
+      </div>
+
+      <!-- Email -->
+      <div class="form-floating mb-3">
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="form-control"
+          placeholder="name@example.com"
+          required
+          [(ngModel)]="user.email"
+          #email="ngModel"
+        />
+        <label for="email">Email address</label>
+      </div>
+
+      <!-- Password -->
+      <div class="form-floating mb-3">
+        <input
+          type="password"
+          id="floatingPassword"
+          name="password"
+          class="form-control"
+          placeholder="Password"
+          required
+          [(ngModel)]="user.password"
+          #password="ngModel"
+        />
+        <label for="floatingPassword">Password</label>
+      </div>
+
+      <!-- Password confirm -->
+      <div class="form-floating mb-3">
+        <input
+          type="password"
+          id="passwordConfirm"
+          name="passwordConfirm"
+          class="form-control"
+          placeholder="Inserisci nuovamente la tua password"
+          required
+        />
+        <label for="passwordConfirm">Conferma password</label>
+      </div>
+    </div>
+
+    <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
+  </form>
+</section>
